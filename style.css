@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --DarkCyan: hsl(185, 75%, 39%);
+    --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --DarkGrayishBlue: hsl(227, 10%, 46%);
+    --DarkGray: hsl(0, 0%, 59%);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--DarkCyan);
+
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+}
+
+.card-container {
+    margin: 170px auto 50px;
+    width: 330px;
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bubbles {
+    background: url(images/bg-pattern-card.svg);
+    height: 140px;
+}
+
+.photo {
+    position: absolute;
+    top: 87px;
+    left: 35%;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 96px;
+}
+
+.personal-data-container {
+    background-color: white;
+    height: 150px;
+    padding: 75px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.name {
+    font-weight: 700;
+    color: var(--VeryDarkDesaturatedBlue);
+}
+
+.age,
+.city {
+    color: var(--DarkGray);
+}
+
+.city {
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.stats-container {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+
+.statistics {
+    text-align: center;
+}
+
+.quantity {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--VeryDarkDesaturatedBlue);
+}
+
+.units {
+    font-size: 0.6rem;
+    color: var(--DarkGray);
+    letter-spacing: 2px;
+}
+
+
+/*----------- Footer ------------*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1439px) {
+    .card-container {
+        width: 350px;
+    }
+}
